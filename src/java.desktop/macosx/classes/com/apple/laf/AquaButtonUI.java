@@ -111,7 +111,7 @@ public class AquaButtonUI extends BasicButtonUI implements Sizeable {
                     border = AquaButtonBorder.getBevelButtonBorder();
                 }
             } else if (b.getIcon() != null || b.getComponentCount() > 0) {
-                // radar 3308129 && (b.getText() == null || b.getText().equals("")))
+                // radar 3308129 && (b.getText() == null || b.getText().isEmpty()))
                 // we used to only do this for buttons that had images and no text
                 // now we do it for all buttons that have any images - they cannot
                 // be a default button.
